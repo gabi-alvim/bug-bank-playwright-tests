@@ -2,20 +2,32 @@
 # yarn lockfile v1
 
 
-"@playwright/test@^1.22.2":
-  version "1.22.2"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.22.2.tgz#b848f25f8918140c2d0bae8e9227a40198f2dd4a"
-  integrity sha512-cCl96BEBGPtptFz7C2FOSN3PrTnJ3rPpENe+gYCMx4GNNDlN4tmo2D89y13feGKTMMAIVrXfSQ/UmaQKLy1XLA==
+"@playwright/test@^1.24.0-alpha-jul-1-2022":
+  version "1.24.0-alpha-jul-1-2022"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.24.0-alpha-jul-1-2022.tgz#1c24641841ba67dcba98e26196932323bbe004e8"
+  integrity sha512-A+HhU6wwooDonC9bFu80Z/UFDJbk9pqGvo4gsabaN40dNrOnpGMQpwZvaUV7rppsBnRZyzdUP7KcFuvmAsB2VA==
   dependencies:
     "@types/node" "*"
-    playwright-core "1.22.2"
+    playwright-core "1.24.0-alpha-jul-1-2022"
 
 "@types/node@*":
   version "17.0.35"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.35.tgz#635b7586086d51fb40de0a2ec9d1014a5283ba4a"
+  resolved "https://registry.npmjs.org/@types/node/-/node-17.0.35.tgz"
   integrity sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==
 
-playwright-core@1.22.2:
-  version "1.22.2"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.22.2.tgz#ed2963d79d71c2a18d5a6fd25b60b9f0a344661a"
-  integrity sha512-w/hc/Ld0RM4pmsNeE6aL/fPNWw8BWit2tg+TfqJ3+p59c6s3B6C8mXvXrIPmfQEobkcFDc+4KirNzOQ+uBSP1Q==
+playwright-core@1.23.1:
+  version "1.23.1"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.23.1.tgz"
+  integrity sha512-9CXsE0gawph4KXl6oUaa0ehHRySZjHvly4TybcBXDvzK3N3o6L/eZ8Q6iVWUiMn0LLS5bRFxo1qEtOETlYJxjw==
+
+playwright-core@1.24.0-alpha-jul-1-2022:
+  version "1.24.0-alpha-jul-1-2022"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.24.0-alpha-jul-1-2022.tgz#e0df21e7537461a3cfb6b3a31aae9efcb8f60bc5"
+  integrity sha512-8pTkNb21sN1UDwq40xp9VXEjC3Wl6c9Fq99UVtU+Mh8jXWYW/W64c8Dqj/HQfAkrD5NWnmcydRH/FflyUSd8OQ==
+
+playwright@^1.23.1:
+  version "1.23.1"
+  resolved "https://registry.npmjs.org/playwright/-/playwright-1.23.1.tgz"
+  integrity sha512-+lgiy1JZMNPwpBp5tsUdjTGxuJ+lXZbtSKmMDc0/f1oVsNDXXA+r7zeC9Kzd+4jSHteoJJocargxVx2Mn1o2kw==
+  dependencies:
+    playwright-core "1.23.1"
