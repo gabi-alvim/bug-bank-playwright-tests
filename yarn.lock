@@ -2,32 +2,25 @@
 # yarn lockfile v1
 
 
-"@playwright/test@^1.24.0-alpha-jul-1-2022":
-  version "1.24.0-alpha-jul-1-2022"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.24.0-alpha-jul-1-2022.tgz#1c24641841ba67dcba98e26196932323bbe004e8"
-  integrity sha512-A+HhU6wwooDonC9bFu80Z/UFDJbk9pqGvo4gsabaN40dNrOnpGMQpwZvaUV7rppsBnRZyzdUP7KcFuvmAsB2VA==
+"@faker-js/faker@^7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.3.0.tgz#a508df35ded585c4e071cb5d9d7c89623c837fae"
+  integrity sha512-1W0PZezq2rxlAssoWemi9gFRD8IQxvf0FPL5Km3TOmGHFG7ib0TbFBJ0yC7D/1NsxunjNTK6WjUXV8ao/mKZ5w==
+
+"@playwright/test@^1.23.3":
+  version "1.23.3"
+  resolved "https://registry.npmjs.org/@playwright/test/-/test-1.23.3.tgz"
+  integrity sha512-kR4vo2UGHC84DGqE6EwvAeaehj3xCAK6LoC1P1eu6ZGdC79rlqRKf8cFDx6q6c9T8MQSL1O9eOlup0BpwqNF0w==
   dependencies:
     "@types/node" "*"
-    playwright-core "1.24.0-alpha-jul-1-2022"
+    playwright-core "1.23.3"
 
 "@types/node@*":
-  version "17.0.35"
-  resolved "https://registry.npmjs.org/@types/node/-/node-17.0.35.tgz"
-  integrity sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==
+  version "18.0.4"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.0.4.tgz"
+  integrity sha512-M0+G6V0Y4YV8cqzHssZpaNCqvYwlCiulmm0PwpNLF55r/+cT8Ol42CHRU1SEaYFH2rTwiiE1aYg/2g2rrtGdPA==
 
-playwright-core@1.23.1:
-  version "1.23.1"
-  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.23.1.tgz"
-  integrity sha512-9CXsE0gawph4KXl6oUaa0ehHRySZjHvly4TybcBXDvzK3N3o6L/eZ8Q6iVWUiMn0LLS5bRFxo1qEtOETlYJxjw==
-
-playwright-core@1.24.0-alpha-jul-1-2022:
-  version "1.24.0-alpha-jul-1-2022"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.24.0-alpha-jul-1-2022.tgz#e0df21e7537461a3cfb6b3a31aae9efcb8f60bc5"
-  integrity sha512-8pTkNb21sN1UDwq40xp9VXEjC3Wl6c9Fq99UVtU+Mh8jXWYW/W64c8Dqj/HQfAkrD5NWnmcydRH/FflyUSd8OQ==
-
-playwright@^1.23.1:
-  version "1.23.1"
-  resolved "https://registry.npmjs.org/playwright/-/playwright-1.23.1.tgz"
-  integrity sha512-+lgiy1JZMNPwpBp5tsUdjTGxuJ+lXZbtSKmMDc0/f1oVsNDXXA+r7zeC9Kzd+4jSHteoJJocargxVx2Mn1o2kw==
-  dependencies:
-    playwright-core "1.23.1"
+playwright-core@1.23.3:
+  version "1.23.3"
+  resolved "https://registry.npmjs.org/playwright-core/-/playwright-core-1.23.3.tgz"
+  integrity sha512-x35yzsXDyo0BIXYimLnUFNyb42c//NadUNH6IPGOteZm96oTGA1kn4Hq6qJTI1/f9wEc1F9O1DsznXIgXMil7A==
