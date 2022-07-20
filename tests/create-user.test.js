@@ -12,7 +12,7 @@ test.describe.parallel('Create user', () => {
 
   })
 
-  test('validate mandatory fields', async ({ page }) => {
+  test('validar campos obrigatórios', async ({ page }) => {
 
   await page.locator('button', {hasText: 'Cadastrar'}).click();
 
@@ -22,7 +22,7 @@ test.describe.parallel('Create user', () => {
 
   })
 
-  test('registration without filling the name', async ({ page }) => {
+  test('cadastro inválido sem o nome do usuário', async ({ page }) => {
   
       const password = faker.internet.password(6)
       const email = faker.internet.email()
@@ -39,7 +39,7 @@ test.describe.parallel('Create user', () => {
     await expect(locator).toHaveText('Nome não pode ser vazio.')
 
   })
-  test('created successfully', async ({ page }) => {
+  test('usuário cadastrado com sucesso', async ({ page }) => {
   
       const password = faker.internet.password(6)
       const email = faker.internet.email()

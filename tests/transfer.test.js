@@ -11,7 +11,7 @@ test.describe.parallel('Create user', () => {
       await loginUser( page )
     
     })
-    test('Validate mandatory fields', async ({ page }) => {
+    test('validar campos obrigatórios', async ({ page }) => {
 
       await page.click('#btn-TRANSFERÊNCIA')
 
@@ -26,7 +26,7 @@ test.describe.parallel('Create user', () => {
 
     })
 
-    test('Transfer Zero value', async ({ page }) => {
+    test('transferência sem valor válido', async ({ page }) => {
 
       await page.click('#btn-TRANSFERÊNCIA')
 
@@ -43,7 +43,7 @@ test.describe.parallel('Create user', () => {
 
     })
 
-    test('Invalid recipient account', async ({ page }) => {
+    test('conta para transferência inválida', async ({ page }) => {
 
       await page.click('#btn-TRANSFERÊNCIA')
 
@@ -60,7 +60,7 @@ test.describe.parallel('Create user', () => {
 
     })
 
-    test('Amount to transfer > than the balance', async ({ page }) => {
+    test('Valor da transferência > saldo', async ({ page }) => {
 
       await page.click('#btn-TRANSFERÊNCIA')
 
@@ -69,9 +69,9 @@ test.describe.parallel('Create user', () => {
 
       await page.type('#__next >> [placeholder="Informe o número da conta"]', '246')
       await page.type('#__next >> [placeholder="Informe o dígito da conta"]', '2')
-      await page.type('#__next >> [placeholder="Informe o valor da transferência"]', '100')
+      await page.type('#__next >> [placeholder="Informe o valor da transferência"]', '3000')
       await page.click('button', 'Transferir agora')
-     // await expect(page.locator("text=Transferencia realizada com sucesso")).toBeVisible()(não consegui Validar erro no site)
+      //await expect(page.locator("text=Transferencia realizada com sucesso")).toBeVisible()(não consegui Validar erro no site)
     })
 })
 

@@ -11,7 +11,7 @@ test.describe.parallel('Realizar Login User', () => {
 
   })
 
-  test('validate mandatory fields', async ({ page }) => {
+  test('validar campos obrigatórios', async ({ page }) => {
 
   await page.locator('button', {hasText: 'Acessar'}).click();
 
@@ -21,7 +21,7 @@ test.describe.parallel('Realizar Login User', () => {
 
   })
 
-  test('user invalid', async ({ page }) => {
+  test('login com usuário inválido', async ({ page }) => {
   
     await page.type('.card__login >> [placeholder="Informe seu e-mail"]', "invalid@gmail.com.br")
     await page.type('.card__login >> [placeholder="Informe sua senha"]', "123", { log:false })
@@ -33,7 +33,7 @@ test.describe.parallel('Realizar Login User', () => {
 
   })
 
-  test('login successfully', async ({ page }) => {
+  test('usuário logado realizado com sucesso', async ({ page }) => {
 
     await createUser( page )
 
