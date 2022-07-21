@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const { faker } = require('@faker-js/faker')
 
 
-test.describe.parallel('Create user', () => {
+test.describe.parallel('Criar ususário', () => {
 
   test.beforeEach(async ({ page }) => {
     

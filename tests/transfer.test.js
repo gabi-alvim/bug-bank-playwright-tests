@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const { loginUser } = require("../lib/helpers");
 
 
-test.describe.parallel('Create user', () => {
+test.describe.parallel('Realizar Transferências', () => {
 
     test.beforeEach(async ({ page }) => {
       
@@ -71,7 +71,7 @@ test.describe.parallel('Create user', () => {
       await page.type('#__next >> [placeholder="Informe o dígito da conta"]', '2')
       await page.type('#__next >> [placeholder="Informe o valor da transferência"]', '3000')
       await page.click('button', 'Transferir agora')
-      //await expect(page.locator("text=Transferencia realizada com sucesso")).toBeVisible()(não consegui Validar erro no site)
+      await expect(page.locator("text=Transferencia realizada com sucesso")).toBeVisible()//(não consegui Validar erro no site)
     })
 })
 

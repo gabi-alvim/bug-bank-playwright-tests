@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const { createUser , email , password } = require('../lib/helpers');
 
 
-test.describe.parallel('Realizar Login User', () => {
+test.describe.parallel('Realizar Login', () => {
 
   test.beforeEach(async ({ page }) => {
     
