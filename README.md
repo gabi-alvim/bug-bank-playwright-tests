@@ -30,7 +30,7 @@ Fica a critério do testador.
 ### Playwright
 
 ```bash
-  yarn add —dev playwright@playwright/test
+  yarn create playwright
 ```
 O framework de automação de testes utilizado foi o Playwright.
 
